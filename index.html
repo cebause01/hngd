@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Heart's Words - A Love Letter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        dancing: ['Dancing Script', 'cursive'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        romantic: {
+                            light: '#fff5f5',
+                            pink: '#f8d7da',
+                            red: '#d63384',
+                            darkred: '#ff6b6b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
+</head>
+<body class="max-h-screen py-12 px-4 sm:px-6 relative">
+    <!-- Background slideshow -->
+    <div id="background-slideshow" class="fixed inset-0 z-0">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="floating-pictures-container h-full w-full overflow-hidden">
+            <!-- Original pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            
+            <!-- Second copy of all pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            
+            <!-- Third copy of all pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            
+            <!-- Fourth copy of all pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            <!-- Original pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            
+            <!-- Second copy of all pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            
+            <!-- Third copy of all pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+            
+            <!-- Fourth copy of all pictures -->
+            <div class="floating-picture" style="background-image: url('picture/1027f1fc-1f6e-43ae-a60c-6d473ad7ed13.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/1c54133c-4593-4f0c-8294-65bde99f6fbb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/58b9318e-f7af-4fe1-a9da-b2e6faf319a8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/5df71052-6478-4e91-aab9-0c0937388e4b.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/619ac125-55ca-4a85-9298-f1dca706fcc8.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/65ecd373-41ce-422b-ae71-b62dcf3f3f2f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7b66b636-67c6-4126-9037-18fc8453ab69.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/7f550b33-1866-4b0b-9f18-51818a08a75f.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/83401d1e-141b-4a85-9545-82042bba00c6.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/96130a4e-dc8a-410f-99d3-cd75c558ab28.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/9def59d7-16c7-4664-9c62-883d4fcab480.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/b1b7da74-9889-4d5c-9cb6-851a255e3364.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/da65bdf2-f372-4cc8-ad0d-55d181cd57ea.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/dd27311f-437e-4c71-a60c-f3f9d21029fb.jpg');"></div>
+            <div class="floating-picture" style="background-image: url('picture/f3af5d88-974a-464f-ae71-49ac824316c6.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/fd5885f2-815c-4c2c-804f-c9ad5a048012.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1864.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1900.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_1925.JPEG');"></div>
+            <div class="floating-picture" style="background-image: url('picture/IMG_3523.JPEG');"></div>
+        </div>
+    </div>
+    
+    <audio id="bgMusic" src="PUBLIC - Make You Mine (Put Your Hand in Mine) [Official Video] (mp3cut.net).mp3" preload="auto"></audio>
+    <div class="max-w-2xl mx-auto h-screen bg-white bg-opacity-95 backdrop-blur-sm rounded-lg shadow-lg p-4 sm:p-6 relative border border-romantic-pink overflow-auto z-10" style="transform: scale(0.85);">
+        <!-- Decorative border effect -->
+        <div class="absolute inset-2 border border-romantic-pink rounded pointer-events-none"></div>
+        
+        <!-- Wax seal decoration -->
+        <div class="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-romantic-red opacity-20"></div>
+        
+        <h1 class="font-dancing text-2xl sm:text-3xl text-romantic-red text-center mb-4">
+            My Dearest Sayang <span class="text-romantic-darkred"></span>
+        </h1>
+        
+        <div class="text-right italic text-gray-500 mb-4 font-playfair text-xs">
+            August 1, 2023
+        </div>
+        
+        <div class="font-playfair text-sm space-y-3 text-gray-800">
+            <p>My love,</p>
+            
+            <p>Loving someone is not easy. It requires patience, understanding, and a willingness to grow together. But every moment spent with you makes it all worthwhile. The fights we have only serve to strengthen our bond, and I wouldn't trade our journey for anything.   </p>
+            
+            <p>Your smile is my sunrise, your laughter my favorite melody. In your eyes, I found a home I never knew I was searching for. Each day with you is a gift I cherish more than words can express.</p>
+            
+            <p>I love the way your mind works, the kindness in your soul. You've shown me depths of love I never imagined possible, and for that, I am eternally grateful to have my beloved Lisa in my life.</p>
+            
+            <p>No matter where life takes us, know this: my love for you is as constant as the stars, as deep as the ocean, and as endless as time itself.</p>
+
+            <p>Thank you for being my partner, and my greatest adventure. I look forward to all the tomorrows we will share, hand in hand, heart to heart. Happy National Girlfriend Day Sayang.</p>
+            
+            <p>Forever yours,</p>
+        </div>
+        
+        <!-- Reasons Why I Love You Section -->
+        <div class="mt-4 p-3 bg-romantic-light bg-opacity-50 rounded-lg border border-romantic-pink">
+            <h2 class="font-dancing text-lg text-romantic-red text-center mb-3">50 Reasons Why I Love You</h2>
+            <div id="reasons-container" class="text-xs space-y-1 max-h-24 overflow-y-auto">
+                <div class="reason-item opacity-0 transition-opacity duration-500">1. Your beautiful smile that lights up my world</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">2. The way you laugh at my silly jokes</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">3. Your kind and compassionate heart</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">4. How you make me feel safe and loved</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">5. Your gendotness</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">6. The way you care for others</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">7. Your beautiful eyes that see the best in everyone</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">8. How you support my dreams</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">9. Your gentle touch that comforts me</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">10. The way you understand me without words</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">11. Your strength in difficult times</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">12. How you make ordinary moments magical</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">13. Your patience with me</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">14. The way you spill your heart</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">15. Your love for me</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">16. How you make me want to be a better person</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">17. Your warm hugs that heal everything</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">18. The way you sing </div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">19. Your creativity and artistic soul</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">20. How you remember the little things</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">21. Your forgiveness and understanding</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">22. The way you believe in me</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">23. Your determination and perseverance</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">24. How you make me laugh every day</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">25. Your beautiful soul that shines bright</div>
+                <!-- Adding more reasons to reach 50 for now -->
+                <div class="reason-item opacity-0 transition-opacity duration-500">26. The way you care for everyone</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">27. Your honesty and trustworthiness</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">28. How you make me feel complete</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">29. Your love for animals</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">30. The way you listen with your heart</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">31. Your courage to face challenges</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">32. How you make every day an adventure</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">33. Your respect for others</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">34. The way you make me feel special</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">35. Your dedication to your goals</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">36. How you bring out the best in me</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">37. Your generosity and giving spirit</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">38. The way you make simple moments precious</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">39. Your loyalty and faithfulness</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">40. How you accept me as I am</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">41. Your passion for the things you love</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">42. The way you make me feel proud</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">43. Your sense of humor and playfulness</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">44. How you inspire me every day</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">45. Your grace under pressure</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">46. The way you make me feel at home</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">47. Your endless capacity for love</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">48. How you make me believe in forever</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">49. Your beautiful heart that chose to love me</div>
+                <div class="reason-item opacity-0 transition-opacity duration-500">50. Simply because you are YOU, and that's perfect</div>
+            </div>
+            <button id="showReasons" class="mt-3 px-4 py-2 bg-romantic-red text-white rounded-lg text-xs hover:bg-romantic-darkred transition-colors">
+                Click to see why I love you ❤️
+            </button>
+        </div>
+        
+        <div class="font-dancing text-3xl text-romantic-red text-right mt-8">
+            Zarif
+        </div>
+        
+        <!-- Interactive elements -->
+        <div class="mt-8 text-center group">
+            <button id="sendLetter" class="inline-flex flex-col items-center transition-transform hover:scale-105 focus:outline-none">
+                <span class="text-3xl text-romantic-red mb-2 group-hover:animate-bounce">💖</span>
+                <span class="text-gray-600 text-sm">Click this to receive the love</span>
+            </button>
+        </div>
+        
+            
+    <script>
+        document.getElementById('sendLetter').addEventListener('click', function() {
+            for (let i = 0; i < 10000; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.innerHTML = '♥';
+                    heart.className = 'absolute text-romantic-red text-2xl animate-float';
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.top = '100vh';
+                    heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                    document.body.appendChild(heart);
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 10000);
+                }, i * 1); // minimal stagger for effect
+            }
+            // Play background music
+            const audio = document.getElementById('bgMusic');
+            if (audio.paused) {
+                audio.volume = 0.5;
+                audio.play();
+            }
+        });
+        
+        // Create floating hearts
+        function createFloatingHearts() {
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.innerHTML = '♥';
+                    heart.className = 'absolute text-romantic-red text-xl opacity-70 animate-float';
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.top = Math.random() * 100 + 'vh';
+                    heart.style.animationDuration = (Math.random() * 8 + 5) + 's';
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 10000);
+                }, i * 2000);
+            }
+        }
+        
+        // Start floating hearts and repeat every 15 seconds
+        createFloatingHearts();
+        setInterval(createFloatingHearts, 15000);
+        
+        // Initialize floating pictures
+        function initFloatingPictures() {
+            const pictures = document.querySelectorAll('.floating-picture');
+            pictures.forEach((picture, index) => {
+                // Random initial position
+                picture.style.left = Math.random() * 80 + 10 + '%';
+                picture.style.top = Math.random() * 80 + 10 + '%';
+                
+                // Random size
+                const size = Math.random() * 100 + 80; // 80-180px
+                picture.style.width = size + 'px';
+                picture.style.height = size + 'px';
+                
+                // Random rotation
+                picture.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
+                
+                // Random animation delay
+                picture.style.animationDelay = (index * 0.5) + 's';
+            });
+        }
+        
+        // Start floating pictures
+        initFloatingPictures();
+        
+        // Reasons animation
+        let reasonIndex = 0;
+        let reasonInterval;
+        
+        document.getElementById('showReasons').addEventListener('click', function() {
+            const reasons = document.querySelectorAll('.reason-item');
+            const button = this;
+            
+            button.style.display = 'none';
+            
+            reasonInterval = setInterval(() => {
+                if (reasonIndex < reasons.length) {
+                    reasons[reasonIndex].style.opacity = '1';
+                    reasons[reasonIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    reasonIndex++;
+                } else {
+                    clearInterval(reasonInterval);
+                }
+            }, 200); // Show one reason every 200ms
+        });
+    </script>
+    
+    <style>
+        /* Floating pictures styles */
+        .floating-pictures-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .floating-picture {
+            position: absolute;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            animation: gentleFloat 8s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+        
+        .floating-picture:hover {
+            transform: scale(1.1) !important;
+            opacity: 1;
+            z-index: 5;
+        }
+        
+        @keyframes gentleFloat {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-10px) rotate(1deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(-1deg);
+            }
+            75% {
+                transform: translateY(-10px) rotate(0.5deg);
+            }
+        }
+        
+        /* Floating hearts animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        .animate-float {
+            animation: float linear forwards;
+        }
+    </style>
+</body>
+</html>
